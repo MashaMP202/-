@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:PeachPuff;
+}
+.clock{
+	display: flex;
+	width:700px;
+	height:700px;
+	justify-content:center;
+	align-items:center;
+	background: url("245bbqo72lenq5flx0r8.png");
+    background-size: cover;
+	border: 3px solid MediumVioletRed;
+	border-radius: 50%;
+	animation: changeBackgroundColor 30s infinite alternate;
+}
+
+@keyframes changeBackgroundColor {
+      0% { background-color:MistyRose; }
+      50% { background-color:Plum ; }
+      100% { background-color: Pink; }
+    }
+
+.clock:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: MediumVioletRed;
+    border-radius: 50%;
+    
+}
+
+
+.hour{
+  position:absolute;
+  height: 200px; 
+  width: 4px;
+  left: 49.70%;
+  top: 30.70%;
+  transform-origin: 40% 95%;
+  background-color: MediumVioletRed;
+}
+
+
+.minute {
+  
+  position:absolute;
+  height: 310px; 
+  width: 4px;
+  left: 49.70%;
+  top: 20.3%;
+  transform-origin: 50% 95%;
+  background-color: MediumVioletRed;
+  
+}
+
+.second {
+  
+  position:absolute;
+  height: 350px; 
+  width: 2px;
+  left: 50%;
+  top: 16%;
+  transform-origin: 55% 95%;
+  background-color: Crimson;
+ 
+}
